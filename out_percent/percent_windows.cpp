@@ -112,7 +112,7 @@ void Percent::clear_current_line(){
 }
 
 Percent::~Percent(){
-	setpos(active_position);
-    movepos(2, 0);
+	// setpos(active_position);
+    movepos(1, 0);
     // std::cout << "Destructor();" << std::endl;
 }
