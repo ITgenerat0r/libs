@@ -19,6 +19,7 @@ private:
 	const long int md;
 	int outspace_size;
 	std::string bar;
+	std::string clear_string;
 
 	COORD position, active_position;
 public:
@@ -29,7 +30,11 @@ public:
 	COORD getpos();
 
 	void setpos(COORD pos);
+	void movepos(int y, int x);
 	void changepos(int y, int x);
 	void update(long int cur);
+	void increase();
+	void erase_line(int y);
+	void clear_current_line();
 	
 };
